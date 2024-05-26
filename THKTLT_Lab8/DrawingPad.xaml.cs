@@ -29,7 +29,7 @@ namespace THKTLT_Lab8
         private void drawingCanvas_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Point mouseLocation = e.GetPosition(this.drawingCanvas); //Xác định vị trí của con trỏ
-            Square mySquare = new Square(100); //Tạo một đối tượng Square
+            DrawingShape mySquare = new Square(111); //Tạo một đối tượng Square
             if (mySquare is IDraw) //Kiểm tra mySquare khi hiện thực giao diện IDraw
             {
                 IDraw drawSquare = mySquare;
@@ -38,7 +38,7 @@ namespace THKTLT_Lab8
             }
             if (mySquare is IColor) ////Kiểm tra mySquare khi hiện thực giao diện IColor
             {
-                IColor colorSquare = mySquare;
+                DrawingShape colorSquare = mySquare;
                 colorSquare.SetColor(Colors.BurlyWood); //Set màu cho đối tượng
             }
         }
@@ -46,7 +46,7 @@ namespace THKTLT_Lab8
         private void drawingCanvas_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
             Point mouseLocation = e.GetPosition(this.drawingCanvas); //Xác định vị trí của con trỏ
-            Circle myCircle = new Circle(100);
+            DrawingShape myCircle = new Circle(100);
             if (myCircle is IDraw)
             {
                 IDraw drawCircle = myCircle;

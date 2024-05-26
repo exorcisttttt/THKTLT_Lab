@@ -10,45 +10,23 @@ using Windows.UI.Xaml.Shapes;
 
 namespace THKTLT_Lab8
 {
-    class Circle: IDraw, IColor
+    class Circle : DrawingShape
     {
-        private int diameter;
-        private int locX = 0, locY = 0;
-        private Ellipse circle = null;
-        public Circle(int diameter)
+        public Circle(int diameter) : base(diameter)
         {
-            this.diameter = diameter;
         }
-        void IDraw.SetLocation(int xCoord, int yCoord)
+        public override void Draw(Canvas canvas)
         {
-            this.locX = xCoord;
-            this.locY = yCoord;
-        }
-        void IDraw.Draw(Canvas canvas)
-        {
-            if (this.circle != null)
+            if (this.shape != null)
             {
-                canvas.Children.Remove(this.circle);//Xóa đối tượng
+                canvas.Children.Remove(this.shape);
             }
             else
             {
-                this.circle = new Ellipse(); //Tạo một đối tượng mới
+                this.shape = new Ellipse();
             }
-            this.circle.Height = this.diameter; //Điều chỉnh chiều cao
-            this.circle.Width = this.diameter; //Điều chỉnh chiều rộng
-            Canvas.SetTop(this.circle, this.locY); //Set vị trí cạnh trên của đoi tượng
-            Canvas.SetLeft(this.circle, this.locX);//Set vị trí cạnh trái của đối tượng
-            canvas.Children.Add(this.circle); //Thêm vào Canvas
-
-        }
-        void IColor.SetColor(Color color)
-        {
-            if (this.circle != null)
-            {
-                SolidColorBrush brush = new SolidColorBrush(color);
-                this.circle.Fill = brush;
-
-            }
+            base.Draw(canvas);
         }
     }
+
 }
