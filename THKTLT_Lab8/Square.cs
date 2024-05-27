@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +10,13 @@ using Windows.UI.Xaml.Shapes;
 
 namespace THKTLT_Lab8
 {
-    class Square: DrawingShape
+    class Square: DrawingShape, IDraw, IColor
     {
         public Square(int sideLength) : base(sideLength)
         {
-            // Constructors được kế thừa từ DrawingShape 
+
         }
-        public override void Draw(Canvas canvas)    
+        public override void Draw(Canvas canvas)
         {
             if (this.shape != null)
             {
@@ -28,6 +28,5 @@ namespace THKTLT_Lab8
             }
             base.Draw(canvas);
         }
-
     }
 }
