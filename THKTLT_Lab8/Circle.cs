@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +10,11 @@ using Windows.UI.Xaml.Shapes;
 
 namespace THKTLT_Lab8
 {
-    class Circle : DrawingShape
+    class Circle: DrawingShape, IDraw, IColor
     {
         public Circle(int diameter) : base(diameter)
         {
+            
         }
         public override void Draw(Canvas canvas)
         {
@@ -28,5 +29,4 @@ namespace THKTLT_Lab8
             base.Draw(canvas);
         }
     }
-
 }
