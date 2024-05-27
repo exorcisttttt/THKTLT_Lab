@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,9 +7,10 @@ using Windows.UI;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
 using Windows.UI.Xaml.Controls;
+
 namespace THKTLT_Lab8
 {
-    abstract class DrawingShape : IDraw, IColor
+    abstract class DrawingShape
     {
         protected int size;
         protected int locX = 0, locY = 0;
@@ -40,9 +41,7 @@ namespace THKTLT_Lab8
             this.shape.Height = this.size;
             this.shape.Width = this.size;
             Canvas.SetTop(this.shape, this.locY);
-            Canvas.SetLeft(this.shape, this.locX); 
-            canvas.Children.Add(this.shape);
+            Canvas.SetLeft(this.shape, this.locX); canvas.Children.Add(this.shape);
         }
-
     }
- }
+}
