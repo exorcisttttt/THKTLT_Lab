@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="094d8f5c-aef0-4cd1-b934-f0d6e392fc88"
-    Publisher="CN=Useless Laptop"
+    Name="b23a7b9c-d2cc-43c0-bc9c-65e1dd7f51f9"
+    Publisher="CN=lastiara"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="094d8f5c-aef0-4cd1-b934-f0d6e392fc88" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="b23a7b9c-d2cc-43c0-bc9c-65e1dd7f51f9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>THKTLT_Lab8</DisplayName>
-    <PublisherDisplayName>Useless Laptop</PublisherDisplayName>
+    <DisplayName>Lab7</DisplayName>
+    <PublisherDisplayName>lastiara</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="THKTLT_Lab8.App">
+      EntryPoint="Lab7.App">
       <uap:VisualElements
-        DisplayName="THKTLT_Lab8"
+        DisplayName="Lab7"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="THKTLT_Lab8"
+        Description="Lab7"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
