@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="094d8f5c-aef0-4cd1-b934-f0d6e392fc88"
+    Name="e89caeaf-2474-42c4-9525-b83fe635974f"
     Publisher="CN=Useless Laptop"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="094d8f5c-aef0-4cd1-b934-f0d6e392fc88" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="e89caeaf-2474-42c4-9525-b83fe635974f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>THKTLT_Lab8</DisplayName>
+    <DisplayName>THKTLT_Lab6</DisplayName>
     <PublisherDisplayName>Useless Laptop</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="THKTLT_Lab8.App">
+      EntryPoint="THKTLT_Lab6.App">
       <uap:VisualElements
-        DisplayName="THKTLT_Lab8"
+        DisplayName="THKTLT_Lab6"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="THKTLT_Lab8"
+        Description="THKTLT_Lab6"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
